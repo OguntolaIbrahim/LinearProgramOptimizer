@@ -13,7 +13,7 @@ LONG_DESCRIPTION = 'Optimization models for solving Linear Programming Problems'
 
 # Setting up
 setup(
-    name="vidstream",
+    name"LinearProgramOptimizer",
     version=VERSION,
     author="OguntolaIbrahim",
     author_email="<oibrahimopeyemi@yahoo.com>",
