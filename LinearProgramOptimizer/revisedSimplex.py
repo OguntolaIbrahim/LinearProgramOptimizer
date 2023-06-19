@@ -1,8 +1,7 @@
-import pandas as pd
 import numpy as np
 
 
-def revised_simplex(c, A, b, n=None, verbose=False):
+def optimize(c, A, b, n=None, verbose=False):
     """
 
     :param c: An array of the coefficents of the objective function
@@ -85,11 +84,7 @@ def revised_simplex(c, A, b, n=None, verbose=False):
                 B[:, leaving_B:leaving_B + 1], N[:, entering_N:entering_N + 1] = v, a
 
     optimal = {}
-    print(xb)
-    print(xb_prime)
-    print(cb.T[0])
-    #     for variable,value in zip(xb[cb.T[0]>0],xb_prime[cb.T[0]>0]):
-    #         optimal[f'X{variable}']=value
+  
     xb = list(xb)
     for variable in xb:
         if variable <= n:
